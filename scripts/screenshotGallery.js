@@ -101,7 +101,10 @@ $(document).ready(function() {
   
   $('.gallery-indicators li').click(function() {
     scrollToFirstScreenshot($(this));
-    toggleGalleryIndicators();
+    
+    if(!$(this).hasClass('active')) {
+      toggleGalleryIndicators();
+    }
   });
   
   $('.gallery-indicators-mobile div').click(function() {
