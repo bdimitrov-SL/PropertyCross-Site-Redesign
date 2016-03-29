@@ -92,11 +92,11 @@ $(document).ready(function() {
   
   //Scroll the image gallery using the left/right buttons
   $('.right').click(function() { 
-    scrollGallery('+=' + screenshotOuterWidth);
+    scrollGallery('+=' + 2*screenshotOuterWidth);
   });
   
   $('.left').click(function() { 
-    scrollGallery('-=' + screenshotOuterWidth);
+    scrollGallery('-=' + 2*screenshotOuterWidth);
   });
   
   $('.gallery-indicators li').click(function() {
