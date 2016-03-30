@@ -41,7 +41,7 @@ function scrollToFirstScreenshot(indicatorClicked) {
     }
   }
 }
-
+var a;
 function visibleScreenshots(type) {
   return $('.screenshot-container .screenshot.' + type).filter(function() {
     // How many pixels the container has been scrolled
