@@ -41,7 +41,7 @@ function scrollToFirstScreenshot(indicatorClicked) {
     }
   }
 }
-var a;
+
 function visibleScreenshots(type) {
   return $('.screenshot-container .screenshot.' + type).filter(function() {
     // How many pixels the container has been scrolled
@@ -62,8 +62,8 @@ $(document).ready(function() {
   screenshotContainer = $('.screenshot-container');
   galleryIndicators = $('.gallery-indicators li, .gallery-indicators-mobile div');
   downloadBtn = $('.download-btn');
-  androidFirst = $(".android-first");
-  iOSFirst = $('.ios-first');
+  androidFirst = $('.screenshot.android').first();
+  iOSFirst = $('.screenshot.ios').first();
   
   screenshotWidth = screenshot.width();
   screenshotOuterWidth = screenshot.outerWidth(true);
